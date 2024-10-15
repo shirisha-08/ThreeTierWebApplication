@@ -320,10 +320,6 @@
         
         - Expand `Advance details`
             - IAM instance profile: Select `S3-AmazonS3ReadOnlyAccess` IAM Role
-            - `NOTE:` Make sure to update the LoadBalancer DNS `INTERNAL_LOAD_BALANCER_DNS` in https://github.com/awanmbandi/aws-real-world-projects/blob/main/webserver-reverse-proxy-config/000-default.conf `before passing the below User Data`
-            - User data: provide the user data in https://github.com/awanmbandi/aws-real-world-projects/blob/main/webserver-reverse-proxy-config/web-automation.sh
-            - `NOTE:` Update the `webserver-reverse-proxy-config/000-default.conf` on GitHub before passing User Data
-
             - Click on `Create launch template`
 
 ### Create Appserver Launch Template
@@ -341,10 +337,6 @@
         
         - Expand `Advance details`
             - IAM instance profile: Select `S3-AmazonS3ReadOnlyAccess` IAM Role
-            - `NOTE:` Make sure to update the Database Configurations in https://github.com/awanmbandi/aws-real-world-projects/blob/main/appserver-database-config/wp-config.php with Yours, `before passing the below User Data`
-            - User data: provide the user data in https://github.com/awanmbandi/aws-real-world-projects/blob/main/appserver-startup-script/app-automation.sh
-            - `NOTE:` Update the Database Configuration file `main/appserver-database-config/wp-config.php` on GitHub before passing the User Data
-            - Once changes have been made and user data passed 
             - Click on `Create launch template`
 
 ## STEP 8: Create Webserver and Appserver Auto Scaling Groups
